@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\schol\radar\WaterSensor\WaterSensor.kicad_sch</source>
+    <date>7/11/2025 7:16:33 PM</date>
+    <tool>Eeschema 7.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>WaterSensor.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="A1">
+      <value>Adafruit_Feather_HUZZAH32_ESP32</value>
+      <footprint>Module:Adafruit_Feather</footprint>
+      <datasheet>https://cdn-learn.adafruit.com/downloads/pdf/adafruit-huzzah32-esp32-feather.pdf</datasheet>
+      <libsource lib="MCU_Module" part="Adafruit_Feather_HUZZAH32_ESP32" description="Microcontroller module with ESP32 MCU"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="WaterSensor.kicad_sch"/>
+      <property name="ki_description" value="Microcontroller module with ESP32 MCU"/>
+      <property name="ki_keywords" value="Adafruit feather microcontroller module USB"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d58494cd-b960-4c37-87e3-af10158680ed</tstamps>
+    </comp>
+    <comp ref="BZ1">
+      <value>Buzzer</value>
+      <libsource lib="Device" part="Buzzer" description="Buzzer, polarized"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="WaterSensor.kicad_sch"/>
+      <property name="ki_description" value="Buzzer, polarized"/>
+      <property name="ki_keywords" value="quartz resonator ceramic"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2f115ae0-7e90-4280-beb2-e21efb57cd68</tstamps>
+    </comp>
+    <comp ref="C1">
+      <value>45.4u</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="WaterSensor.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f172498e-ebfc-4849-80b1-d64a0b2452ea</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>1M</value>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="WaterSensor.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6f34d0da-5300-4df4-a443-7b95a3457eb0</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Device" part="Buzzer">
+      <description>Buzzer, polarized</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>*Buzzer*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">BZ</field>
+        <field name="Value">Buzzer</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="-" type="passive"/>
+        <pin num="2" name="+" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MCU_Module" part="Adafruit_Feather_HUZZAH32_ESP32">
+      <description>Microcontroller module with ESP32 MCU</description>
+      <docs>https://cdn-learn.adafruit.com/downloads/pdf/adafruit-huzzah32-esp32-feather.pdf</docs>
+      <footprints>
+        <fp>Adafruit*Feather*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">A</field>
+        <field name="Value">Adafruit_Feather_HUZZAH32_ESP32</field>
+        <field name="Footprint">Module:Adafruit_Feather</field>
+        <field name="Datasheet">https://cdn-learn.adafruit.com/downloads/pdf/adafruit-huzzah32-esp32-feather.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~{RESET}" type="input"/>
+        <pin num="2" name="3V3" type="power_in"/>
+        <pin num="3" name="NC" type="no_connect"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="DAC2/A0" type="bidirectional"/>
+        <pin num="6" name="DAC1/A1" type="bidirectional"/>
+        <pin num="7" name="I34/A2" type="bidirectional"/>
+        <pin num="8" name="I39/A3" type="bidirectional"/>
+        <pin num="9" name="IO36/A4" type="bidirectional"/>
+        <pin num="10" name="IO4/A5" type="bidirectional"/>
+        <pin num="11" name="SCK/IO5" type="bidirectional"/>
+        <pin num="12" name="MOSI/IO18" type="bidirectional"/>
+        <pin num="13" name="MISO/IO19" type="bidirectional"/>
+        <pin num="14" name="RX/IO16" type="bidirectional"/>
+        <pin num="15" name="TX/IO17" type="bidirectional"/>
+        <pin num="16" name="IO21" type="bidirectional"/>
+        <pin num="17" name="SDA/IO23" type="bidirectional"/>
+        <pin num="18" name="SCL/IO22" type="bidirectional"/>
+        <pin num="19" name="A6/IO14" type="bidirectional"/>
+        <pin num="20" name="A7/IO32" type="bidirectional"/>
+        <pin num="21" name="A8/IO15" type="bidirectional"/>
+        <pin num="22" name="A9/IO33" type="bidirectional"/>
+        <pin num="23" name="A10/IO27" type="bidirectional"/>
+        <pin num="24" name="A11/IO12" type="bidirectional"/>
+        <pin num="25" name="A12/IO13" type="bidirectional"/>
+        <pin num="26" name="USB" type="power_in"/>
+        <pin num="27" name="EN" type="input"/>
+        <pin num="28" name="VBAT" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="MCU_Module">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/MCU_Module.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3.3V">
+      <node ref="A1" pin="2" pinfunction="3V3" pintype="power_in"/>
+    </net>
+    <net code="2" name="/BuzzerPower">
+      <node ref="A1" pin="5" pinfunction="DAC2/A0" pintype="bidirectional"/>
+      <node ref="BZ1" pin="1" pinfunction="-" pintype="passive"/>
+    </net>
+    <net code="3" name="/PWM">
+      <node ref="A1" pin="6" pinfunction="DAC1/A1" pintype="bidirectional"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+    </net>
+    <net code="4" name="/Vout">
+      <node ref="A1" pin="8" pinfunction="I39/A3" pintype="bidirectional"/>
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+    </net>
+    <net code="5" name="GND">
+      <node ref="A1" pin="4" pinfunction="GND" pintype="power_in"/>
+      <node ref="BZ1" pin="2" pinfunction="+" pintype="passive"/>
+      <node ref="C1" pin="1" pintype="passive"/>
+    </net>
+    <net code="6" name="unconnected-(A1-A6{slash}IO14-Pad19)">
+      <node ref="A1" pin="19" pinfunction="A6/IO14" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="7" name="unconnected-(A1-A7{slash}IO32-Pad20)">
+      <node ref="A1" pin="20" pinfunction="A7/IO32" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="8" name="unconnected-(A1-A8{slash}IO15-Pad21)">
+      <node ref="A1" pin="21" pinfunction="A8/IO15" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="9" name="unconnected-(A1-A9{slash}IO33-Pad22)">
+      <node ref="A1" pin="22" pinfunction="A9/IO33" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="10" name="unconnected-(A1-A10{slash}IO27-Pad23)">
+      <node ref="A1" pin="23" pinfunction="A10/IO27" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="11" name="unconnected-(A1-A11{slash}IO12-Pad24)">
+      <node ref="A1" pin="24" pinfunction="A11/IO12" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="12" name="unconnected-(A1-A12{slash}IO13-Pad25)">
+      <node ref="A1" pin="25" pinfunction="A12/IO13" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="13" name="unconnected-(A1-EN-Pad27)">
+      <node ref="A1" pin="27" pinfunction="EN" pintype="input+no_connect"/>
+    </net>
+    <net code="14" name="unconnected-(A1-I34{slash}A2-Pad7)">
+      <node ref="A1" pin="7" pinfunction="I34/A2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="15" name="unconnected-(A1-IO4{slash}A5-Pad10)">
+      <node ref="A1" pin="10" pinfunction="IO4/A5" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="16" name="unconnected-(A1-IO21-Pad16)">
+      <node ref="A1" pin="16" pinfunction="IO21" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="17" name="unconnected-(A1-IO36{slash}A4-Pad9)">
+      <node ref="A1" pin="9" pinfunction="IO36/A4" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="18" name="unconnected-(A1-MISO{slash}IO19-Pad13)">
+      <node ref="A1" pin="13" pinfunction="MISO/IO19" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="19" name="unconnected-(A1-MOSI{slash}IO18-Pad12)">
+      <node ref="A1" pin="12" pinfunction="MOSI/IO18" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="20" name="unconnected-(A1-NC-Pad3)">
+      <node ref="A1" pin="3" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="21" name="unconnected-(A1-RX{slash}IO16-Pad14)">
+      <node ref="A1" pin="14" pinfunction="RX/IO16" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="22" name="unconnected-(A1-SCK{slash}IO5-Pad11)">
+      <node ref="A1" pin="11" pinfunction="SCK/IO5" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="23" name="unconnected-(A1-SCL{slash}IO22-Pad18)">
+      <node ref="A1" pin="18" pinfunction="SCL/IO22" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="24" name="unconnected-(A1-SDA{slash}IO23-Pad17)">
+      <node ref="A1" pin="17" pinfunction="SDA/IO23" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="25" name="unconnected-(A1-TX{slash}IO17-Pad15)">
+      <node ref="A1" pin="15" pinfunction="TX/IO17" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="26" name="unconnected-(A1-USB-Pad26)">
+      <node ref="A1" pin="26" pinfunction="USB" pintype="power_in+no_connect"/>
+    </net>
+    <net code="27" name="unconnected-(A1-VBAT-Pad28)">
+      <node ref="A1" pin="28" pinfunction="VBAT" pintype="power_in+no_connect"/>
+    </net>
+    <net code="28" name="unconnected-(A1-~{RESET}-Pad1)">
+      <node ref="A1" pin="1" pinfunction="~{RESET}" pintype="input+no_connect"/>
+    </net>
+  </nets>
+</export>
