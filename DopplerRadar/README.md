@@ -39,7 +39,7 @@ to compute velocity in real time, displayed on an onboard LCD.
 
 ## Results
 
-*Board currently in assembly. Results and measured performance to be added.*
+[First Assembly + Testing](IMG_0649.png)
 
 ## Tools
 
