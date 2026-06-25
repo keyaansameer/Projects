@@ -39,7 +39,7 @@ to compute velocity in real time, displayed on an onboard LCD.
 
 ## Results
 
-[First Assembly + Testing](IMG_0649.png)
+[First Assembly + Testing](IMG_0649.jpg)
 
 ## Tools
 
