@@ -9,7 +9,7 @@ The system uses an IPM-365 radar transceiver to detect Doppler-shifted signals f
 a moving target. Analog filtering isolates the frequency components of interest; cutoff frequencies
 of approximately 1600 Hz and 7200 Hz correspond to the doppler frequency shifts caused by a low end
 of possible thrown ball speeds (~25 mph) and a high end (~100 mph). Thus, signals outside this range
-are attenuated, improving velocity estimation accuracy. ESP32 performs FFT-based signal processing 
+are attenuated, improving velocity estimation accuracy. AC coupling in Op-Amp configuration removes DC offset from radar output so only swings are amplified. Reference voltage fed into the Op-Amps (2.5V) allows room for signal to swing without going negative or clipping. Additionally, a voltage divider feeds into a buffer stage which leads to ESP32 ADC to ensure adequate room for the signal not to clip. ESP32 performs FFT-based signal processing 
 to compute velocity in real time, displayed on an onboard LCD.
 
 ## Hardware
